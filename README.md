@@ -7,4 +7,5 @@ Introduction to Exception Handling and Troubleshooting
 Rence Mayores
 
 ## Updates
-- 1. CM - Incorporated Exception Handling throughout program.
+- 1. RM - Incorporated Exception Handling throughout program.
+- 2. RM - Incorporated logging for high salary employees and exceptions.
