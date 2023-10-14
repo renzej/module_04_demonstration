@@ -35,10 +35,10 @@ try:
 
 except FileNotFoundError as e: #Exceptions are ordered from most specific to general
       # print("Error opening file: ", e)
-      logging.error(e)
+      logging.critical(e)
 except Exception as e:
       # print("General Exception: ", e)
-      logging.error(e)
+      logging.critical(e)
 finally:
       if file is not None:
             file.close()
@@ -70,11 +70,11 @@ try:
                                         f"{HIGH_SALARY}.")
 
 
-                  salary *= (1 - RECOMMENDED_INCREASE)
+                  salary *= (1 + RECOMMENDED_INCREASE)
                   new_data.append([title,name,salary])
 except Exception as e:
       # print(e)
-      logging.error(e)
+      logging.critical(e)
 
 
 
@@ -91,7 +91,7 @@ try:
             file.write(row)
 except Exception as e:
       # print(e)
-      logging.error(e)
+      logging.critical(e)
 
 #LECTURE SECTION 5
 logging.debug('Debug level logging.')
